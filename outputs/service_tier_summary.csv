@@ -1,0 +1,5 @@
+service_type,total_routes,total_daily_trips,avg_trips_per_route,avg_stops_per_route,max_trips
+Metro Feeder,215,2896,13.47,22.3,107
+Ordinary / General,7047,51362,7.29,29.12,204
+Vajra AC,167,2408,14.42,25.54,112
+Vayu Vajra (Airport),46,1170,25.43,40.26,141
