@@ -50,11 +50,4 @@ plt.tight_layout()
 print("Displaying 3: Scatter Plot...")
 plt.show()
 
-# Pie Chart: Service Types
-counts = routes["service_type"].value_counts()
-plt.figure(figsize=(6, 6))
-plt.pie(counts.values, labels=counts.index, autopct="%1.1f%%", startangle=140)
-plt.title("BMTC Routes by Service Type")
-plt.tight_layout()
-print("Displaying 4: Pie Chart...")
-plt.show()
+
