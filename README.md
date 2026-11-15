@@ -1,6 +1,6 @@
 # Public Transportation Usage Analysis — BMTC & Metro (Topic #2)
 
-Empirical data analysis and operational profiling of the Bengaluru Metropolitan Transport Corporation (BMTC) public bus network using Python, Pandas, Matplotlib, Seaborn, and Plotly.
+Empirical data analysis and operational profiling of the Bengaluru Metropolitan Transport Corporation (BMTC) public bus network using Python, Pandas, Matplotlib, and Seaborn.
 
 ---
 
@@ -21,8 +21,7 @@ DEV_AAT/
 ├── 01_Data_Manipulation.py        # Pandas inspection, filtering, and groupby operations
 ├── 02_Matplotlib_Visualizations.py# Bar, histogram, scatter, and pie charts
 ├── 03_Seaborn_Aesthetics.py       # Boxplot, violin plot, and correlation heatmap
-├── 04_Time_Series_Data.py         # 24-hour departure time-series plot
-└── 05_Plotly_Interactive.py       # Interactive Plotly visualizations (fig.show())
+└── 04_Time_Series_Data.py         # 24-hour departure time-series plot
 ```
 
 ---
@@ -36,5 +35,4 @@ python3 01_Data_Manipulation.py
 python3 02_Matplotlib_Visualizations.py
 python3 03_Seaborn_Aesthetics.py
 python3 04_Time_Series_Data.py
-python3 05_Plotly_Interactive.py
 ```
