@@ -15,7 +15,7 @@ def get_service_type(name):
 
 routes['service_type'] = routes['name'].apply(get_service_type)
 
-# 1. Bar Plot: Top 15 Bus Corridors
+# Bar Plot: Top 15 Bus Corridors
 top_15 = routes.sort_values(by="trip_count", ascending=False).head(15)
 fig1 = px.bar(
     top_15,
@@ -29,7 +29,7 @@ fig1 = px.bar(
 print("Displaying 1: Interactive Bar Plot...")
 fig1.show()
 
-# 2. Scatter Plot: Stops vs Trips
+# Scatter Plot: Stops vs Trips
 fig2 = px.scatter(
     routes,
     x="stop_count",
