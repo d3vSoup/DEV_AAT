@@ -173,3 +173,4 @@ Follow a standard 5-step data science workflow:
 1. *"We analyzed the complete operational GTFS transit network of BMTC Bengaluru, encompassing 9,960 bus stops and 7,475 route directions across the city."*
 2. *"Using Pandas, Matplotlib, Seaborn, and Plotly, we engineered features for service categories and extracted over 57,000 scheduled departure timestamps to evaluate network density, hub congestion, and hourly rush-hour trends."*
 3. *"Our findings highlight significant traffic concentration at central junctions like Majestic and Corporation, identify major ring-road corridors as the highest-frequency transit arteries, and chart the citywide commute profile peaking at 8:00 AM and 3:00–5:00 PM."*
+
