@@ -45,3 +45,19 @@ plt.title("Correlation Heatmap")
 plt.tight_layout()
 print("Displaying 3: Heatmap...")
 plt.show()
+
+# Binned Pivot Heatmap: Average Trips by Length and Service Type
+bins = [0, 20, 35, 50, 100]
+labels = ["Short (<20)", "Medium (20-35)", "Long (35-50)", "Ultra-Long (>50)"]
+routes["length_bin"] = pd.cut(routes["stop_count"], bins=bins, labels=labels)
+
+pivot = routes.pivot_table(index="service_type", columns="length_bin", values="trip_count", aggfunc="mean", observed=False).round(1)
+
+plt.figure(figsize=(8, 5))
+sns.heatmap(pivot, annot=True, fmt=".1f", cmap="YlGnBu", linewidths=1, cbar_kws={'label': 'Average Daily Trips'})
+plt.title("Average Daily Trips by Route Length and Service Type")
+plt.xlabel("Route Length Bin")
+plt.ylabel("Service Type")
+plt.tight_layout()
+print("Displaying 4: Binned Pivot Heatmap...")
+plt.show()
